@@ -105,7 +105,7 @@ function render(start = 0) {
     occupation.appendChild(textOccupation);
 
     const price = table_row.insertCell(2);
-    const textPrice = document.createTextNode(initialData[i].price);
+    const textPrice = document.createTextNode("$"+initialData[i].price);
     price.appendChild(textPrice);
     // Gathers total price of price
     sum += initialData[i].price;
